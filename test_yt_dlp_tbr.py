@@ -85,7 +85,7 @@ def test_yt_dlp_download(install_all_yt_dlp, yt_dlp_version, youtube_url, video_
     versions = [
         "2024.03.10",
         "2024.04.09",
-        "2024.05.27,
+        "2024.05.27",
     ]
     install_all_yt_dlp(versions)
     
