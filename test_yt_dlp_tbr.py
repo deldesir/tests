@@ -76,16 +76,16 @@ def download_video(video_url, format_options, video_info, yt_dlp_version):
 
 # Test function using the youtube_url and video_info fixtures
 @pytest.mark.parametrize("yt_dlp_version", [
-    "2023.11.16",
     "2024.03.10",
     "2024.04.09",
+    "2024.05.27",
 ])
 def test_yt_dlp_download(install_all_yt_dlp, yt_dlp_version, youtube_url, video_info, request):
     # Install all versions of yt-dlp
     versions = [
-        "2023.11.16",
         "2024.03.10",
         "2024.04.09",
+        "2024.05.27,
     ]
     install_all_yt_dlp(versions)
     
